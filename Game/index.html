@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="en" onclick="jump()">
+<html onkeypress="jump()" onclick="jump()">
 
 <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="/style.css">
+    <link rel="stylesheet" href="/app/css/style.css">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
@@ -12,12 +12,13 @@
 <body>
     <div id="score">
         <h1>Your Score: <span id="scoreSpan"></span></h1>
+        <p><br> Press space or left click to jump!</p>
     </div>
     <div id="game">
-        <div id="character"></div>
-        <div id="block"></div>
+        <div id="character"><img src="/images/frog.svg" alt=""></div>
+        <div id="block"><img src="/images/shark.svg" alt=""></div>
     </div>
 </body>
-<script src="/script.js"></script>
+<script src="/app/js/script.js"></script>
 
 </html>

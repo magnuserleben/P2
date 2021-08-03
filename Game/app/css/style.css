@@ -1,0 +1,74 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body {
+    user-select: none;
+}
+#score {
+    text-align: center;
+    top: 155px;
+    left: 0;
+    bottom: 0px;
+    right: 0;
+    position: absolute;
+}
+
+#game {
+    width: 500px;
+    height: 200px;
+    border-bottom: 1px solid rgba(173, 173, 173, 0.466);
+    margin: 0 auto;
+    margin-top: 350px;
+}
+
+#character {
+    width: 25px;
+    height: 25px;
+    position: relative;
+    top: 175px;
+}
+
+#character img {
+    margin-top: -28px;
+    margin-left: -10px;
+    height: 70px;
+}
+
+
+.animate {
+    animation: jump 2s;
+}
+
+@keyframes jump {
+    0%{top: 150px;}
+    10%{top: 100px;}
+    30%{top: 100px;}
+    50%{top: 100px;}
+    57%{top: 100px;}
+    64%{top: 100px;}
+    100%{top: 170px;}
+}
+
+#block {
+    width: 25px;
+    height: 50px;
+    position: relative;
+    top: 125px;
+    left: 159px;
+    animation: block 1s infinite linear;
+}
+
+#block img {
+    height: 60px;
+}
+
+
+@keyframes block {
+    0%{left: 480px;}
+    100%{left: -40px;}
+}
+
