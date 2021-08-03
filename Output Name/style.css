@@ -30,6 +30,6 @@
 }
 
 #demo {
-    
-    color: white;
+    text-decoration: underline;
+    color: rgb(62, 131, 119);
 }
